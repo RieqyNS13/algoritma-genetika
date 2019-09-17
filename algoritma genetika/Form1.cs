@@ -17,7 +17,6 @@ namespace algoritma_genetika
 		public Random random;
 		public class Individu
 		{
-			Random random = new Random();
 			public int batasan = 30;
 			public double fitness = 0;
 			public double P = 0; //probabilitas
@@ -144,7 +143,7 @@ namespace algoritma_genetika
 		{
 			textBox3.AppendText("\r\nProses Roulette Wheel:\r\n\r\n");
 			new_population = new List<Individu>();
-			Random random = new Random();
+			//Random random = new Random();
 			for (int i = 0; i < population_size; i++)
 			{
 				double R = random.NextDouble();
@@ -172,7 +171,7 @@ namespace algoritma_genetika
 			//textBox4.AppendText("Kromosom parents:\r\n");
 			textBox4.AppendText("Crossover rate: " + crossover_rate + "\r\n");
 
-			Random random = new Random();
+			//Random random = new Random();
 			for (int i = 0; i < population_size; i++)
 			{
 
@@ -239,16 +238,8 @@ namespace algoritma_genetika
 
 		}
 
-		private void Button1_Click(object sender, EventArgs e)
+		private void btnInisialisasi(object sender, EventArgs e)
 		{
-
-		}
-
-
-		private void Button1_Click_1(object sender, EventArgs e)
-		{
-
-			//Inisialisasi
 			inisialisasi();
 		}
 	
@@ -259,7 +250,7 @@ namespace algoritma_genetika
 			{
 				MessageBox.Show("Inisialisasi dulu"); return;
 			}
-			
+			textBox2.Clear();
 			evaluasiKromosom();
 
 
@@ -287,6 +278,7 @@ namespace algoritma_genetika
 		//Mutation (Langkah 5)
 		private void BtnMutation_Click(object sender, EventArgs e)
 		{
+			textBox5.Clear();
 			if (this.population == null || this.new_population == null)
 			{
 				MessageBox.Show("Inisialisasi dulu"); return;
