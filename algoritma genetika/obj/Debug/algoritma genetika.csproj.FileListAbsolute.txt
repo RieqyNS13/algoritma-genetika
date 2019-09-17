@@ -1,0 +1,10 @@
+D:\gay\C#\algoritma genetika\algoritma genetika\bin\Debug\algoritma genetika.exe.config
+D:\gay\C#\algoritma genetika\algoritma genetika\bin\Debug\algoritma genetika.exe
+D:\gay\C#\algoritma genetika\algoritma genetika\bin\Debug\algoritma genetika.pdb
+D:\gay\C#\algoritma genetika\algoritma genetika\obj\Debug\algoritma genetika.csprojAssemblyReference.cache
+D:\gay\C#\algoritma genetika\algoritma genetika\obj\Debug\algoritma_genetika.Form1.resources
+D:\gay\C#\algoritma genetika\algoritma genetika\obj\Debug\algoritma_genetika.Properties.Resources.resources
+D:\gay\C#\algoritma genetika\algoritma genetika\obj\Debug\algoritma genetika.csproj.GenerateResource.cache
+D:\gay\C#\algoritma genetika\algoritma genetika\obj\Debug\algoritma genetika.csproj.CoreCompileInputs.cache
+D:\gay\C#\algoritma genetika\algoritma genetika\obj\Debug\algoritma genetika.exe
+D:\gay\C#\algoritma genetika\algoritma genetika\obj\Debug\algoritma genetika.pdb
