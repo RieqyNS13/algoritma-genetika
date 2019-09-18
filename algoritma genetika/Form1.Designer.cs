@@ -32,25 +32,20 @@
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.label1 = new System.Windows.Forms.Label();
 			this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.BtnInisialisasi = new System.Windows.Forms.Button();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.btnEvaluasiKromosom = new System.Windows.Forms.Button();
-			this.textBox2 = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.tabPage3 = new System.Windows.Forms.TabPage();
 			this.label4 = new System.Windows.Forms.Label();
 			this.btnSeleksiKromosom = new System.Windows.Forms.Button();
-			this.textBox3 = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
 			this.tabPage4 = new System.Windows.Forms.TabPage();
 			this.txtCrossoverRate = new System.Windows.Forms.TextBox();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
-			this.textBox4 = new System.Windows.Forms.TextBox();
 			this.btnCrossOver = new System.Windows.Forms.Button();
 			this.tabPage5 = new System.Windows.Forms.TabPage();
-			this.textBox5 = new System.Windows.Forms.TextBox();
 			this.btnMutation = new System.Windows.Forms.Button();
 			this.txtMutationRate = new System.Windows.Forms.TextBox();
 			this.label7 = new System.Windows.Forms.Label();
@@ -66,6 +61,11 @@
 			this.btnGenerasi = new System.Windows.Forms.Button();
 			this.label8 = new System.Windows.Forms.Label();
 			this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+			this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+			this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+			this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+			this.richTextBox4 = new System.Windows.Forms.RichTextBox();
+			this.richTextBox5 = new System.Windows.Forms.RichTextBox();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -94,9 +94,9 @@
 			// 
 			// tabPage1
 			// 
+			this.tabPage1.Controls.Add(this.richTextBox1);
 			this.tabPage1.Controls.Add(this.label1);
 			this.tabPage1.Controls.Add(this.numericUpDown1);
-			this.tabPage1.Controls.Add(this.textBox1);
 			this.tabPage1.Controls.Add(this.BtnInisialisasi);
 			this.tabPage1.Location = new System.Drawing.Point(4, 25);
 			this.tabPage1.Name = "tabPage1";
@@ -127,18 +127,6 @@
             0,
             0});
 			// 
-			// textBox1
-			// 
-			this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.textBox1.Location = new System.Drawing.Point(8, 65);
-			this.textBox1.Multiline = true;
-			this.textBox1.Name = "textBox1";
-			this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-			this.textBox1.Size = new System.Drawing.Size(854, 392);
-			this.textBox1.TabIndex = 1;
-			// 
 			// BtnInisialisasi
 			// 
 			this.BtnInisialisasi.Location = new System.Drawing.Point(11, 36);
@@ -151,8 +139,8 @@
 			// 
 			// tabPage2
 			// 
+			this.tabPage2.Controls.Add(this.richTextBox2);
 			this.tabPage2.Controls.Add(this.btnEvaluasiKromosom);
-			this.tabPage2.Controls.Add(this.textBox2);
 			this.tabPage2.Controls.Add(this.label2);
 			this.tabPage2.Location = new System.Drawing.Point(4, 25);
 			this.tabPage2.Name = "tabPage2";
@@ -172,18 +160,6 @@
 			this.btnEvaluasiKromosom.UseVisualStyleBackColor = true;
 			this.btnEvaluasiKromosom.Click += new System.EventHandler(this.Button2_Click);
 			// 
-			// textBox2
-			// 
-			this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.textBox2.Location = new System.Drawing.Point(11, 71);
-			this.textBox2.Multiline = true;
-			this.textBox2.Name = "textBox2";
-			this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-			this.textBox2.Size = new System.Drawing.Size(851, 384);
-			this.textBox2.TabIndex = 1;
-			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
@@ -195,9 +171,9 @@
 			// 
 			// tabPage3
 			// 
+			this.tabPage3.Controls.Add(this.richTextBox3);
 			this.tabPage3.Controls.Add(this.label4);
 			this.tabPage3.Controls.Add(this.btnSeleksiKromosom);
-			this.tabPage3.Controls.Add(this.textBox3);
 			this.tabPage3.Controls.Add(this.label3);
 			this.tabPage3.Location = new System.Drawing.Point(4, 25);
 			this.tabPage3.Name = "tabPage3";
@@ -206,6 +182,7 @@
 			this.tabPage3.TabIndex = 2;
 			this.tabPage3.Text = "Seleksi Kromosom";
 			this.tabPage3.UseVisualStyleBackColor = true;
+			this.tabPage3.Click += new System.EventHandler(this.TabPage3_Click);
 			// 
 			// label4
 			// 
@@ -218,25 +195,13 @@
 			// 
 			// btnSeleksiKromosom
 			// 
-			this.btnSeleksiKromosom.Location = new System.Drawing.Point(11, 68);
+			this.btnSeleksiKromosom.Location = new System.Drawing.Point(11, 61);
 			this.btnSeleksiKromosom.Name = "btnSeleksiKromosom";
 			this.btnSeleksiKromosom.Size = new System.Drawing.Size(75, 23);
 			this.btnSeleksiKromosom.TabIndex = 2;
 			this.btnSeleksiKromosom.Text = "Seleksi kromosom";
 			this.btnSeleksiKromosom.UseVisualStyleBackColor = true;
 			this.btnSeleksiKromosom.Click += new System.EventHandler(this.BtnSeleksiKromosom_Click);
-			// 
-			// textBox3
-			// 
-			this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.textBox3.Location = new System.Drawing.Point(8, 97);
-			this.textBox3.Multiline = true;
-			this.textBox3.Name = "textBox3";
-			this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-			this.textBox3.Size = new System.Drawing.Size(773, 316);
-			this.textBox3.TabIndex = 1;
 			// 
 			// label3
 			// 
@@ -249,10 +214,10 @@
 			// 
 			// tabPage4
 			// 
+			this.tabPage4.Controls.Add(this.richTextBox4);
 			this.tabPage4.Controls.Add(this.txtCrossoverRate);
 			this.tabPage4.Controls.Add(this.label6);
 			this.tabPage4.Controls.Add(this.label5);
-			this.tabPage4.Controls.Add(this.textBox4);
 			this.tabPage4.Controls.Add(this.btnCrossOver);
 			this.tabPage4.Location = new System.Drawing.Point(4, 25);
 			this.tabPage4.Name = "tabPage4";
@@ -288,18 +253,6 @@
 			this.label5.TabIndex = 3;
 			this.label5.Text = "Metode yang digunakan adalah one-cut point";
 			// 
-			// textBox4
-			// 
-			this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.textBox4.Location = new System.Drawing.Point(13, 86);
-			this.textBox4.Multiline = true;
-			this.textBox4.Name = "textBox4";
-			this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-			this.textBox4.Size = new System.Drawing.Size(773, 327);
-			this.textBox4.TabIndex = 2;
-			// 
 			// btnCrossOver
 			// 
 			this.btnCrossOver.Location = new System.Drawing.Point(8, 57);
@@ -312,7 +265,7 @@
 			// 
 			// tabPage5
 			// 
-			this.tabPage5.Controls.Add(this.textBox5);
+			this.tabPage5.Controls.Add(this.richTextBox5);
 			this.tabPage5.Controls.Add(this.btnMutation);
 			this.tabPage5.Controls.Add(this.txtMutationRate);
 			this.tabPage5.Controls.Add(this.label7);
@@ -323,18 +276,6 @@
 			this.tabPage5.TabIndex = 4;
 			this.tabPage5.Text = "Mutasi";
 			this.tabPage5.UseVisualStyleBackColor = true;
-			// 
-			// textBox5
-			// 
-			this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.textBox5.Location = new System.Drawing.Point(8, 77);
-			this.textBox5.Multiline = true;
-			this.textBox5.Name = "textBox5";
-			this.textBox5.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-			this.textBox5.Size = new System.Drawing.Size(773, 327);
-			this.textBox5.TabIndex = 8;
 			// 
 			// btnMutation
 			// 
@@ -390,6 +331,7 @@
             this.colD,
             this.colFungsiObjektif,
             this.colRata2});
+			this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.listView1.FullRowSelect = true;
 			this.listView1.GridLines = true;
 			this.listView1.HideSelection = false;
@@ -467,6 +409,66 @@
             0,
             0});
 			// 
+			// richTextBox1
+			// 
+			this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox1.Location = new System.Drawing.Point(3, 65);
+			this.richTextBox1.Name = "richTextBox1";
+			this.richTextBox1.Size = new System.Drawing.Size(851, 395);
+			this.richTextBox1.TabIndex = 6;
+			this.richTextBox1.Text = "";
+			// 
+			// richTextBox2
+			// 
+			this.richTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox2.Location = new System.Drawing.Point(6, 71);
+			this.richTextBox2.Name = "richTextBox2";
+			this.richTextBox2.Size = new System.Drawing.Size(851, 386);
+			this.richTextBox2.TabIndex = 7;
+			this.richTextBox2.Text = "";
+			// 
+			// richTextBox3
+			// 
+			this.richTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.richTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox3.Location = new System.Drawing.Point(8, 90);
+			this.richTextBox3.Name = "richTextBox3";
+			this.richTextBox3.Size = new System.Drawing.Size(851, 370);
+			this.richTextBox3.TabIndex = 8;
+			this.richTextBox3.Text = "";
+			// 
+			// richTextBox4
+			// 
+			this.richTextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.richTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox4.Location = new System.Drawing.Point(8, 85);
+			this.richTextBox4.Name = "richTextBox4";
+			this.richTextBox4.Size = new System.Drawing.Size(851, 370);
+			this.richTextBox4.TabIndex = 9;
+			this.richTextBox4.Text = "";
+			// 
+			// richTextBox5
+			// 
+			this.richTextBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.richTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.richTextBox5.Location = new System.Drawing.Point(8, 62);
+			this.richTextBox5.Name = "richTextBox5";
+			this.richTextBox5.Size = new System.Drawing.Size(851, 393);
+			this.richTextBox5.TabIndex = 10;
+			this.richTextBox5.Text = "";
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -501,20 +503,16 @@
 		private System.Windows.Forms.TabPage tabPage1;
 		private System.Windows.Forms.Button BtnInisialisasi;
 		private System.Windows.Forms.TabPage tabPage2;
-		private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.NumericUpDown numericUpDown1;
-		private System.Windows.Forms.TextBox textBox2;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Button btnEvaluasiKromosom;
 		private System.Windows.Forms.TabPage tabPage3;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Button btnSeleksiKromosom;
-		private System.Windows.Forms.TextBox textBox3;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.TabPage tabPage4;
 		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.TextBox textBox4;
 		private System.Windows.Forms.Button btnCrossOver;
 		private System.Windows.Forms.TextBox txtCrossoverRate;
 		private System.Windows.Forms.Label label6;
@@ -522,7 +520,6 @@
 		private System.Windows.Forms.Button btnMutation;
 		private System.Windows.Forms.TextBox txtMutationRate;
 		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.TextBox textBox5;
 		private System.Windows.Forms.TabPage tabPage6;
 		private System.Windows.Forms.Label label8;
 		private System.Windows.Forms.NumericUpDown numericUpDown2;
@@ -535,6 +532,11 @@
 		private System.Windows.Forms.ColumnHeader colC;
 		private System.Windows.Forms.ColumnHeader colD;
 		private System.Windows.Forms.ColumnHeader colRata2;
+		private System.Windows.Forms.RichTextBox richTextBox1;
+		private System.Windows.Forms.RichTextBox richTextBox2;
+		private System.Windows.Forms.RichTextBox richTextBox3;
+		private System.Windows.Forms.RichTextBox richTextBox4;
+		private System.Windows.Forms.RichTextBox richTextBox5;
 	}
 }
 
